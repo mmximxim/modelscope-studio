@@ -5,6 +5,8 @@ shots/
 .tmp-preview/
 *.log
 .DS_Store
+.tmp-*
+.zcode/
 
 # Android 构建产物与本机配置
 android/.gradle/
