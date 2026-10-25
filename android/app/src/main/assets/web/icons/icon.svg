@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1410"/>
+      <stop offset="1" stop-color="#0a0908"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#ffd9a8"/>
+      <stop offset="0.35" stop-color="#ff9a4d"/>
+      <stop offset="0.72" stop-color="#f1602a"/>
+      <stop offset="1" stop-color="#b83a17"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff8a3d" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <circle cx="256" cy="240" r="196" fill="url(#glow)"/>
+  <circle cx="256" cy="240" r="126" fill="url(#sun)"/>
+  <circle cx="256" cy="240" r="76" fill="none" stroke="#1b0d05" stroke-opacity="0.55" stroke-width="12" stroke-dasharray="300 200" transform="rotate(-38 256 240)"/>
+  <path d="M365 96l11 28 28 11-28 11-11 28-11-28-28-11 28-11 11-28z" fill="#ffe6c2"/>
+  <path d="M108 348l7 18 18 7-18 7-7 18-7-18-18-7 18-7 7-18z" fill="#ffc46b" fill-opacity="0.75"/>
+  <rect x="96" y="400" width="320" height="4" rx="2" fill="#ffffff" fill-opacity="0.08"/>
+</svg>

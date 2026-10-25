@@ -1,0 +1,33 @@
+{
+  "name": "魔搭画室",
+  "short_name": "画室",
+  "description": "用魔搭 ModelScope API 在手机上生成图片",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0908",
+  "theme_color": "#0a0908",
+  "orientation": "portrait",
+  "categories": ["graphics", "photo", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

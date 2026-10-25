@@ -1,0 +1,23 @@
+node_modules/
+dist/
+data/
+shots/
+.tmp-preview/
+*.log
+.DS_Store
+
+# Android 构建产物与本机配置
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+*.keystore
+*.jks
+*.idsig
+魔搭画室.apk
+
+# 调试产物
+cdp-targets.json
+cdp-capture-out.txt
+gradle-out.txt
