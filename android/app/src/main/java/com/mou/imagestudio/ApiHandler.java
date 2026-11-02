@@ -900,7 +900,7 @@ final class ApiHandler {
     private static String assistantFriendly(int status, String raw) {
         String suffix = raw.isEmpty() ? "" : "（" + raw + "）";
         switch (status) {
-            case 400: return "助手请求被拒绝" + suffix;
+            case 400: return "助手请求被内容审核拦截：图片或提示词里可能有敏感内容（例如裸露、真人隐私），试试只发需要的那部分，或改用文字描述" + suffix;
             case 401: return "Token 无效或已过期，请到设置里重新填写（HTTP 401" + (raw.isEmpty() ? "" : "：" + raw) + "）";
             case 403: return "账号未完成绑定或实名认证，请到魔搭完成后再试（HTTP 403" + (raw.isEmpty() ? "" : "：" + raw) + "）";
             case 404: return "对话模型当前不可用，稍后再试" + suffix;

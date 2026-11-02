@@ -880,9 +880,13 @@ async function handleApi(
       json(res, 200, { ok: true, reply: out.reply, chatModel: out.chatModel });
     } catch (err) {
       const info = friendlyError(err);
+      // 助手返回 400 且上游没给具体原因时，基本是平台内容审核拦截（图片/文字含敏感内容）
+      const auditBlocked = (err as { status?: number }).status === 400;
       json(res, info.status >= 400 && info.status < 600 ? info.status : 502, {
         ok: false,
-        error: info.message,
+        error: auditBlocked
+          ? "助手请求被内容审核拦截：图片或提示词里可能有敏感内容（例如裸露、真人隐私），试试只发需要的那部分，或改用文字描述"
+          : info.message,
       });
     }
     return;
